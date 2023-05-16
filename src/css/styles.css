@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/701/135/827/sky-digital-art-pixel-art-pixels-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333333;
+    user-select: none;
+
+}
+
+body.modo-escuro {
+    background-image: url('https://c.wallhere.com/photos/0f/50/pixel_art_8_bit-238921.jpg!d');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    user-select: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .pokemon-logo {
+    width: 200px;
+}
+
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema,
+header #botao-pokeball {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-color: #d8e3e2b7;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6b7;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8b6;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+.grama {
+    background-color: #7ac74c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.pokemons-guardados .tipo,
+.pokemons-guardados .descricao,
+.pokemons-guardados span,
+.pokemons-guardados .informacoes{
+    visibility: hidden;
+}
+
+.pokemons-guardados .cartao-pokemon,
+.pokemons-guardados .cartao-pokemon:hover {
+    background-color: #a8a8a800;
+    user-select: none;
+}
